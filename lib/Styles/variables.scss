@@ -1,5 +1,8 @@
 @import "~terriajs/lib/Sass/common/_variables.scss";
 
+$font-base: "Nunito", Helvetica, sans-serif;
+$color-primary: #d47e00;
+
 // To customise the look of your map, uncomment and change values here and in lib/Views/global.scss
 /*
 
@@ -14,6 +17,7 @@ $font-pop: $font-base; // If you just want to use one font throughout, do this.
 // "color-secondary" should be a lighter color than "color-primary" but still readable contrasted with white.
 $color-primary: maroon;
 $color-secondary: hsl(60,80%,60%); // or: lighten($color-primary, 20%);
+
 
 // These variables set background panel colors
 $dark: hsl(0,30%,30%);

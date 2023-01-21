@@ -2,9 +2,15 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple"],
   "parameters": {
+    "useCesiumIonTerrain": true,
+    "cesiumTerrainAssetId": 1,
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3YTMyMDNkZi1lNTI4LTRjOGMtOGI2Zi1iZTFiNTMwOTVlZWMiLCJpZCI6MTIwMDAwLCJpYXQiOjE2NzI2MDk0NzZ9._UmAfqzx8SCPxqRqasM0EQCTBIzuL2e_gqN2RTvANTI",
+    "useCesiumIonBingImagery": true,
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
+    "aboutButtonHrefUrl": null,
+    "relatedMaps": {},
 
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
@@ -20,7 +26,7 @@
             text:"Put your print disclaimer here.",
             url: "#"
         },
-        */
+    */
 
     // Pop-up disclaimer that will be shown at the start
     // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
@@ -41,12 +47,12 @@
             link: "http://www.example.com"
         },*/
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "Terria Map",
+    "appName": "Parabasis Map",
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" href=\"https://map.parabasis.org\"><img src=\"images/parabasis_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
       ""
     ],
     // Shown when things go wrong.

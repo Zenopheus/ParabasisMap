@@ -155,12 +155,6 @@
             },
             "LoadBalancerPort": "80",
             "Protocol": "HTTP"
-          },
-          {
-            "InstancePort": "80",
-            "LoadBalancerPort": "443",
-            "Protocol": "HTTPS",
-            "SSLCertificateId": "arn:aws:acm:ap-southeast-2:278900443360:certificate/4162729d-14b1-435f-84e1-cb318b8f5934"
           }
         ]
       },
@@ -308,8 +302,8 @@
                   "Action": ["s3:GetObject", "s3:PutObject"],
                   "Effect": "Allow",
                   "Resource": [
-                    "arn:aws:s3:::terriamap-sharing",
-                    "arn:aws:s3:::terriamap-sharing/*"
+                    "arn:aws:s3:::gignere-parabasis-share",
+                    "arn:aws:s3:::gignere-parabasis-share/*"
                   ]
                 }
               ]

@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/TerriaJS/TerriaMap"
+    "url": "https://github.com/Zenopheus/ParabasisMap"
   },
   "dependencies": {
     "pm2": "^3.2.2",
@@ -30,16 +30,16 @@
     "terriajs-server": "^3.3.4"
   },
   "config": {
-    "awsProfile": "terria",
-    "awsS3PackagesPath": "s3://terria-apps/map",
-    "awsRegion": "ap-southeast-2",
-    "awsEc2InstanceType": "t2.small",
-    "awsEc2ImageId": "ami-0065540df76a93885",
-    "awsKeyName": "terria-kring",
-    "awsS3ServerConfigOverridePath": "s3://terria-apps/map/privateserverconfig-2016-08-31.json",
-    "awsS3ClientConfigOverridePath": "s3://terria-apps/map/privateclientconfig-2018-11-19.json",
+    "awsProfile": "parabasis",
+    "awsS3PackagesPath": "s3://gignere-parabasis/parabasis/map",
+    "awsRegion": "us-east-1",
+    "awsEc2InstanceType": "t2.xlarge",
+    "awsEc2ImageId": "ami-06878d265978313ca",
+    "awsKeyName": "parabasis_test1",
+    "awsS3ServerConfigOverridePath": "s3://gignere-parabasis/parabasis/map/privateserverconfig-2016-08-31.json",
+    "awsS3ClientConfigOverridePath": "s3://gignere-parabasis/parabasis/map/privateclientconfig-2018-11-19.json",
     "docker": {
-      "name": "data61/terria-terriamap",
+      "name": "gignere/parabasis-parabasismap",
       "include": "wwwroot node_modules devserverconfig.json index.js package.json version.js"
     }
   },
