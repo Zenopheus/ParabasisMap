@@ -224,43 +224,6 @@
       },
       "Type": "AWS::AutoScaling::LaunchConfiguration"
     },
-    "RecordSetGroup": {
-      "Properties": {
-        "HostedZoneName": {
-          "Ref": "HostedZoneName"
-        },
-        "RecordSets": [
-          {
-            "AliasTarget": {
-              "DNSName": {
-                "Fn::GetAtt": ["ElasticLoadBalancer", "CanonicalHostedZoneName"]
-              },
-              "HostedZoneId": {
-                "Fn::GetAtt": [
-                  "ElasticLoadBalancer",
-                  "CanonicalHostedZoneNameID"
-                ]
-              }
-            },
-            "Name": {
-              "Fn::Join": [
-                ".",
-                [
-                  {
-                    "Ref": "AWS::StackName"
-                  },
-                  {
-                    "Ref": "HostedZoneName"
-                  }
-                ]
-              ]
-            },
-            "Type": "A"
-          }
-        ]
-      },
-      "Type": "AWS::Route53::RecordSetGroup"
-    },
     "S3InstanceProfile": {
       "Properties": {
         "Path": "/",
